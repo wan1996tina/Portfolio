@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Microsoft JhengHei', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+    box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%; 
+  user-select: none;
+}
+
+@import 'hero';
+@import 'app';
+@import 'main-content';
+@import 'navbar';
+@import 'about';
+@import 'skill';
+@import 'resume';
+@import 'portfolio';
+@import 'footer';

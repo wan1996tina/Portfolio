@@ -1,0 +1,66 @@
+#hero {
+  height: 100vh;
+}
+
+#hero #name {
+  background-color: #fee;
+  color: #f88;
+  font-size: 3px;
+  height: 100vh;
+  position: relative;
+}
+
+#hero #name .title {
+  position: absolute;
+  top: 13%;
+  left: 20%;
+  height: 60%;
+  width: 20%;
+  background-color: #ef7d60;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+#hero #name .title p {
+  font-size: 12px;
+}
+
+#hero #name .arrow {
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  animation: up-down 0.6s ease-in-out infinite alternate-reverse both;
+}
+
+#hero #name .arrow .fas {
+  width: 18px;
+  color: black;
+  margin: auto;
+  font-size: 24px;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+/*# sourceMappingURL=hero.css.map */

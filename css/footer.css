@@ -1,0 +1,12 @@
+#footer {
+  height: 10vh;
+  line-height: 10vh;
+  background: #404040;
+  color: #888;
+  text-align: center;
+}
+
+#footer p {
+  margin: 0;
+}
+/*# sourceMappingURL=footer.css.map */

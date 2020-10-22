@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Microsoft JhengHei', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#hero {
+  height: 100vh;
+}
+
+#hero #name {
+  background-color: #fee;
+  color: #f88;
+  font-size: 3px;
+  height: 100vh;
+  position: relative;
+}
+
+#hero #name .title {
+  position: absolute;
+  top: 13%;
+  left: 20%;
+  height: 60%;
+  width: 20%;
+  background-color: #ef7d60;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+#hero #name .title p {
+  font-size: 12px;
+}
+
+#hero #name .arrow {
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  animation: up-down 0.6s ease-in-out infinite alternate-reverse both;
+}
+
+#hero #name .arrow .fas {
+  width: 18px;
+  color: black;
+  margin: auto;
+  font-size: 24px;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+}
+
+#app a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#app a.router-link-exact-active {
+  color: #42b983;
+}
+
+#main-content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+* {
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.active {
+  color: red;
+}
+
+#navbar {
+  width: 60%;
+  position: fixed;
+  left: calc(50% - 515px);
+  background: rgba(232, 224, 255, 0.8);
+  border-radius: 0 0 12px 12px;
+  z-index: 2;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#navbar ul {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+#navbar ul li {
+  margin: 0 22px;
+  padding: 6px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #180059;
+  -webkit-transition-timing-function: all ease-in;
+          transition-timing-function: all ease-in;
+  position: relative;
+}
+
+#navbar ul li:hover {
+  color: #ef7d60;
+  position: relative;
+  cursor: pointer;
+}
+
+#navbar ul li:hover a {
+  color: #ef7d60;
+}
+
+#navbar ul li::before {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 0px;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#navbar ul li:hover::before {
+  height: 1px;
+  background: #fff;
+}
+
+#navbar ul li a {
+  color: #180059;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: #ef7d60;
+}
+
+#about {
+  height: auto;
+  text-align: center;
+  padding: 70px;
+}
+
+#about h2 {
+  margin: 30px;
+}
+
+#about p {
+  letter-spacing: 1px;
+}
+
+#about .pic {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+  background: #aaa;
+}
+
+#about .pattern-diagonal-lines-sm {
+  width: 300px;
+  height: 400px;
+  top: 22px;
+  left: -30px;
+  position: absolute;
+  background-color: white;
+  color: #c7b7f5;
+  z-index: -1;
+}
+
+#about .block {
+  margin: 30px 0;
+}
+
+#about .intro {
+  padding: 50px 0;
+  text-align: left;
+}
+
+#skill {
+  padding: 80px;
+}
+
+#skill h2 {
+  text-align: center;
+  margin: 30px;
+}
+
+#skill h5 {
+  font-weight: 700;
+}
+
+#resume {
+  background: white;
+  text-align: center;
+  padding: 80px;
+}
+
+#resume h2 {
+  margin: 30px;
+}
+
+#resume .row {
+  width: 100%;
+  padding: 50px 15%;
+  text-align: left;
+}
+
+#portfolio {
+  text-align: center;
+  padding: 80px;
+}
+
+#portfolio h2 {
+  padding: 30px;
+}
+
+#portfolio .row {
+  padding: 0 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+#portfolio .row h5 {
+  font-weight: 700;
+}
+
+#portfolio .row p {
+  font-size: 14px;
+}
+
+#portfolio .box {
+  width: 100%;
+}
+
+#portfolio .card {
+  width: 320px;
+  height: 380px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+#portfolio .card .img {
+  width: 100%;
+  height: 45%;
+  overflow: hidden;
+}
+
+#portfolio .card .text {
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+#portfolio .card .text .btn1 {
+  width: 80px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 5px;
+  background: #000;
+  color: white;
+  cursor: pointer;
+}
+
+#footer {
+  height: 10vh;
+  background: #404040;
+}
+/*# sourceMappingURL=style.css.map */

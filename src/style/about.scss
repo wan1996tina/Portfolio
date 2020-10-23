@@ -18,7 +18,7 @@
   &::after {
     content: '';
     position: absolute;
-    background: rgb(255, 208, 176);
+    // background: rgb(255, 208, 176);
     width: 30%;
     height: 120px;
     right: 480px;
@@ -28,6 +28,27 @@
 
   h2 {
     margin: 30px;
+    position: relative;
+
+    &::before {
+      content: '//';
+      position: absolute;
+      top: 9px;
+      left: 43%;
+      font-size: 17px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      right: 45%;
+      width: 10%;
+      height: 30px;
+      background: rgb(255, 208, 176);
+      transform: skewX(-20deg);
+      z-index: -1;
+    }
   }
 
   h5 {

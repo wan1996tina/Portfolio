@@ -19,7 +19,6 @@
 #about::after {
   content: '';
   position: absolute;
-  background: #ffd0b0;
   width: 30%;
   height: 120px;
   right: 480px;
@@ -29,6 +28,28 @@
 
 #about h2 {
   margin: 30px;
+  position: relative;
+}
+
+#about h2::before {
+  content: '//';
+  position: absolute;
+  top: 9px;
+  left: 43%;
+  font-size: 17px;
+}
+
+#about h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: 45%;
+  width: 10%;
+  height: 30px;
+  background: #ffd0b0;
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+  z-index: -1;
 }
 
 #about h5 {
@@ -85,4 +106,3 @@
     height: 430px;
   }
 }
-/*# sourceMappingURL=about.css.map */

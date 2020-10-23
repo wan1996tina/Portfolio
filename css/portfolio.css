@@ -5,6 +5,40 @@
 
 #portfolio h2 {
   padding: 30px;
+  z-index: 3;
+}
+
+#portfolio h2 .block {
+  position: absolute;
+  bottom: -5px;
+  right: 45%;
+  width: 10%;
+  height: 30px;
+  background: #cef;
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+  z-index: -1;
+}
+
+#portfolio h2::before {
+  content: '//';
+  position: absolute;
+  top: 9px;
+  left: 45%;
+  font-size: 17px;
+}
+
+#portfolio h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: 45%;
+  width: 10%;
+  height: 30px;
+  background: #ffd0b0;
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+  z-index: -1;
 }
 
 #portfolio .row {
@@ -79,4 +113,3 @@
   color: white;
   cursor: pointer;
 }
-/*# sourceMappingURL=portfolio.css.map */

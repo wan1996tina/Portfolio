@@ -1,6 +1,8 @@
 <template lang="pug">
 section#hero
   #name
+    //- .line.pattern-horizontal-lines-md
+    .dec
     .dots.pattern-dots-xl
     .title
     h1 Hi, I'm Tina.

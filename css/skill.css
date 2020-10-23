@@ -18,10 +18,23 @@
   top: 40%;
 }
 
+#skill .block {
+  position: absolute;
+  bottom: -5px;
+  right: 45%;
+  width: 10%;
+  height: 30px;
+  background: #cef;
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+  z-index: -1;
+}
+
 #skill h2 {
   text-align: center;
   margin-bottom: 90px;
   position: relative;
+  z-index: 2;
 }
 
 #skill h2::before {
@@ -63,4 +76,3 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-/*# sourceMappingURL=skill.css.map */

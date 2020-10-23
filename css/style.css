@@ -16,32 +16,65 @@ html, body {
           user-select: none;
 }
 
+@font-face {
+  font-family: keepCalm;
+  src: url("../../public/KeepCalm-Medium.ttf");
+}
+
 #hero {
   height: 100vh;
 }
 
 #hero #name {
-  background-color: #fee;
-  color: #f88;
+  background-color: #cef;
+  color: #8cd;
   font-size: 3px;
   height: 100vh;
   position: relative;
+  overflow: hidden;
+}
+
+#hero #name .dots {
+  position: absolute;
+  width: 700px;
+  height: 40%;
+  background-color: transparent;
+  color: #fff;
+  bottom: 25%;
+  right: 5%;
+}
+
+#hero #name h1 {
+  font-size: 80px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  font-family: 'keepCalm';
+  color: #fff;
+}
+
+#hero #name p {
+  font-size: 12px;
+  position: absolute;
+  top: 62%;
+  left: 30%;
+  font-family: 'keepCalm';
+  color: #1E3273;
+  padding-left: 6px;
 }
 
 #hero #name .title {
   position: absolute;
-  top: 13%;
-  left: 20%;
-  height: 60%;
-  width: 20%;
-  background-color: #ef7d60;
+  top: 20%;
+  right: 18%;
+  height: 1100px;
+  width: 1100px;
+  border-radius: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#92b1eb), color-stop(65%, transparent));
+  background: linear-gradient(180deg, #92b1eb 0%, transparent 65%);
   color: #fff;
   font-size: 40px;
   font-weight: 800;
-}
-
-#hero #name .title p {
-  font-size: 12px;
 }
 
 #hero #name .arrow {
@@ -97,19 +130,14 @@ html, body {
   color: #42b983;
 }
 
+#app section:not(#hero):nth-child(even) {
+  background: #eee;
+}
+
 #main-content {
   height: 100%;
   width: 100%;
   position: relative;
-}
-
-@media (max-width: 576px) {
-  #main-content #navbar {
-    width: 100vw;
-    position: fixed;
-    bottom: 0;
-    z-index: 8;
-  }
 }
 
 * {
@@ -126,7 +154,7 @@ html, body {
   width: 60%;
   position: fixed;
   left: calc(50% - 515px);
-  background: rgba(232, 224, 255, 0.8);
+  background-color: #fff;
   border-radius: 0 0 12px 12px;
   z-index: 2;
   -webkit-transition: 1s;
@@ -195,10 +223,60 @@ html, body {
   color: #ef7d60;
 }
 
+@media (max-width: 576px) {
+  #navbar {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 8;
+    border-radius: 0;
+    background-color: #fff;
+  }
+  #navbar li {
+    margin: 0 10px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #navbar a {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 576px) {
+  .fai {
+    display: none;
+  }
+}
+
 #about {
   height: auto;
   text-align: center;
   padding: 70px;
+  position: relative;
+}
+
+#about::before {
+  content: '';
+  position: absolute;
+  background: #cef;
+  width: 45%;
+  height: 380px;
+  right: 160px;
+  top: 290px;
+  z-index: -2;
 }
 
 #about::after {
@@ -218,18 +296,6 @@ html, body {
 
 #about h5 {
   font-weight: 700;
-  position: relative;
-}
-
-#about h5::before {
-  content: '';
-  position: absolute;
-  background: rgba(232, 224, 255, 0.8);
-  width: 45%;
-  height: 380px;
-  right: 160px;
-  top: 290px;
-  z-index: -2;
 }
 
 #about p {
@@ -260,7 +326,7 @@ html, body {
   left: -30px;
   position: absolute;
   background-color: white;
-  color: #c7b7f5;
+  color: #ffd0b0;
   z-index: -1;
 }
 
@@ -287,13 +353,66 @@ html, body {
   padding: 80px;
 }
 
+#skill li {
+  position: relative;
+  margin: 0 20px;
+}
+
+#skill li::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background: #000;
+  left: -15px;
+  top: 40%;
+}
+
 #skill h2 {
   text-align: center;
-  margin: 30px;
+  margin-bottom: 90px;
+  position: relative;
+}
+
+#skill h2::before {
+  content: '//';
+  position: absolute;
+  top: 8px;
+  left: 45%;
+  font-size: 17px;
+}
+
+#skill h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: 45%;
+  width: 10%;
+  height: 30px;
+  background: #cef;
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+  z-index: -1;
 }
 
 #skill h5 {
   font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#skill .row {
+  width: 76%;
+  margin: auto;
+}
+
+#skill .col-12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #resume {
@@ -409,4 +528,3 @@ html, body {
 #footer p {
   margin: 0;
 }
-/*# sourceMappingURL=style.css.map */

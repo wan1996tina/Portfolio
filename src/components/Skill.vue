@@ -1,6 +1,8 @@
 <template lang="pug">
 section#skill
+
   h2 Skill
+    .block
   .row
     .col-12.col-sm-3
       .text
@@ -16,10 +18,10 @@ section#skill
           li HTML
           li CSS
           li JavaScript
-          li JQuery
+          li jQuery
           li Bootstrap
           li Sass
-          li Vue.js/ Vuex
+          li Vue.js
     .col-12.col-sm-3
       .text
         h5 後端技術
@@ -30,6 +32,6 @@ section#skill
       .text
         h5 相關技能
         ul
-          li GitKraken
-          li 串接 RESTful API
+          li Git
+          li RESTful API
 </template>

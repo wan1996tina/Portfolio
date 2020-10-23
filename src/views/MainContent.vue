@@ -68,7 +68,9 @@ export default {
       // console.log(document.body.clientWidth)
       console.log(document.documentElement.scrollTop)
       if (window.scrollY > 100) {
-        if (document.body.clientWidth > 992) { nav.style.background = 'rgb(232, 224, 255)' }
+        if (document.body.clientWidth > 992) {
+          nav.style.background = 'rgb(232, 224, 255)'
+        }
       } else {
         nav.style.background = '#ffffff'
       }

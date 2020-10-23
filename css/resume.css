@@ -6,6 +6,29 @@
 
 #resume h2 {
   margin: 30px;
+  position: relative;
+  z-index: 3;
+}
+
+#resume h2::before {
+  content: '//';
+  position: absolute;
+  top: 9px;
+  left: 45%;
+  font-size: 17px;
+}
+
+#resume h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: 45%;
+  width: 10%;
+  height: 30px;
+  background: #ffd0b0;
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+  z-index: -1;
 }
 
 #resume .row {
@@ -17,4 +40,3 @@
 #resume .row .col-12 {
   margin: 20px 0;
 }
-/*# sourceMappingURL=resume.css.map */

@@ -11,11 +11,11 @@ section#about
       h5 你好，我是張雅婷
       p Front-End Website Developer
       .intro
-        p 大學時，接觸到寫網頁後產生興趣。
-        p 畢業後參與泰山職訓的專業課程，使專業技能更加精進。
-        p 經過 936 小時的課程，紮實學習 HTML、CSS 及 JavaScript
-        p 前端能使用 Bootstrap、jQuery 套件與 Vue.js 框架
-        p 後端可利用 Node.js 進行資料存取，並配合 Git 控管專案版本
+        p 大學時接觸到網頁設計的課程，產生濃厚的興趣。
+        p 之後參與泰山職訓的專業課程，使網頁設計技能更加精進。
+        p 對於 HTML、CSS 及 JavaScript 相當熟悉，
+        p 前端使用 Bootstrap、jQuery 與 Vue.js 框架進行網頁開發，
+        p 後端運用 Node.js 及 MongoDB 建置資料庫，並配合 Git 執行版本控制‧
 //- pattern-dots-md
 </template>
 

@@ -1,5 +1,4 @@
 #skill {
-  // background: #eee;
   padding: 80px;
 
   li {
@@ -18,11 +17,21 @@
     }
   }
 
+  .block {
+    position: absolute;
+    bottom: -5px;
+    right: 45%;
+    width: 10%;
+    height: 30px;
+    background: #cef;
+    transform: skewX(-20deg);
+    z-index: -1;
+  }
   h2 {
     text-align: center;
     margin-bottom: 90px;
     position: relative;
-
+    z-index: 2;
     &::before {
       content: '//';
       position: absolute;
@@ -59,6 +68,4 @@
     justify-content: center;
   }
   
-  .text {
-  }
 }

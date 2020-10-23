@@ -20,4 +20,4 @@ deploy:
   local_dir: dist
   # 當 master 分支有變更時
   on:
-    branch: master
+    branch: main

@@ -8,7 +8,7 @@
 #about::before {
   content: '';
   position: absolute;
-  background: rgba(232, 224, 255, 0.8);
+  background: #cef;
   width: 45%;
   height: 380px;
   right: 160px;
@@ -63,7 +63,7 @@
   left: -30px;
   position: absolute;
   background-color: white;
-  color: #c7b7f5;
+  color: #ffd0b0;
   z-index: -1;
 }
 

@@ -7,7 +7,7 @@
   &::before {
     content: '';
     position: absolute;
-    background: rgba(232, 224, 255, .8);
+    background: #cef;
     width: 45%;
     height: 380px;
     right: 160px;
@@ -61,7 +61,8 @@
     left: -30px;
     position: absolute;
     background-color: white;
-    color: rgb(199, 183, 245);
+    // color: rgb(199, 183, 245);
+    color: rgb(255, 208, 176);
     z-index: -1;
   }
   

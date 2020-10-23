@@ -5,7 +5,7 @@ section#about
     .block.col-12.col-sm-6
       .pic
         .pic-wrap
-          img(:src='imgSrc' width="300px")
+          img(:src='imgSrc')
         .pattern-diagonal-lines-sm
     .block.col-12.col-sm-6.d-flex.flex-column.justify-content-center.align-items-start
       h5 你好，我是張雅婷

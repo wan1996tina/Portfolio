@@ -1,29 +1,62 @@
+@font-face {
+  font-family: keepCalm;
+  src: url("../../public/KeepCalm-Medium.ttf");
+}
+
 #hero {
   height: 100vh;
 }
 
 #hero #name {
-  background-color: #fee;
-  color: #f88;
+  background-color: #cef;
+  color: #8cd;
   font-size: 3px;
   height: 100vh;
   position: relative;
+  overflow: hidden;
+}
+
+#hero #name .dots {
+  position: absolute;
+  width: 700px;
+  height: 40%;
+  background-color: transparent;
+  color: #fff;
+  bottom: 25%;
+  right: 5%;
+}
+
+#hero #name h1 {
+  font-size: 80px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  font-family: 'keepCalm';
+  color: #fff;
+}
+
+#hero #name p {
+  font-size: 12px;
+  position: absolute;
+  top: 62%;
+  left: 30%;
+  font-family: 'keepCalm';
+  color: #1E3273;
+  padding-left: 6px;
 }
 
 #hero #name .title {
   position: absolute;
-  top: 13%;
-  left: 20%;
-  height: 60%;
-  width: 20%;
-  background-color: #ef7d60;
+  top: 20%;
+  right: 18%;
+  height: 1100px;
+  width: 1100px;
+  border-radius: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#92b1eb), color-stop(70%, transparent));
+  background: linear-gradient(180deg, #92b1eb 0%, transparent 70%);
   color: #fff;
   font-size: 40px;
   font-weight: 800;
-}
-
-#hero #name .title p {
-  font-size: 12px;
 }
 
 #hero #name .arrow {

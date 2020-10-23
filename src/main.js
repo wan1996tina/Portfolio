@@ -10,9 +10,10 @@ import 'pattern.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-import { faCoffee, faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faAngleDoubleDown, faHome, faUser, faTools, faNewspaper, faAddressCard, faPalette, faThLarge, faMagic } from '@fortawesome/free-solid-svg-icons'
 import { faGooglePlus } from '@fortawesome/free-brands-svg-icons'
-library.add(faCoffee, faGooglePlus, faAngleDoubleDown)
+// import { faAddressCard } from '@fortawesome/free-regular-svg-icons'
+library.add(faCoffee, faGooglePlus, faAngleDoubleDown, faHome, faUser, faTools, faNewspaper, faAddressCard, faPalette, faThLarge, faMagic)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

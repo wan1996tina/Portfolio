@@ -4,14 +4,24 @@
     ul
       li
         a(href="javascript:void(0)" @click="scrollTo('#hero')") Home
+        .fai
+          font-awesome-icon(:icon="['fas','home']" href="javascript:void(0)" @click="scrollTo('#hero')")
       li
         a(href="javascript:void(0)" @click="scrollTo('#about')") About Me
+        .fai
+          font-awesome-icon(:icon="['fas','user']" href="javascript:void(0)" @click="scrollTo('#about')")
       li
         a(href="javascript:void(0)" @click="scrollTo('#skill')") Skill
+        .fai
+          font-awesome-icon(:icon="['fas','tools']" href="javascript:void(0)" @click="scrollTo('#skill')")
       li
         a(href="javascript:void(0)" @click="scrollTo('#resume')") Resume
+        .fai
+          font-awesome-icon(:icon="['fas','address-card']" href="javascript:void(0)" @click="scrollTo('#resume')")
       li
         a(href="javascript:void(0)" @click="scrollTo('#portfolio')") Portfolio
+        .fai
+          font-awesome-icon(:icon="['fas','palette']" href="javascript:void(0)" @click="scrollTo('#portfolio')")
   <hero></hero>
   <about></about>
   <skill></skill>
@@ -60,7 +70,7 @@ export default {
       if (window.scrollY > 100) {
         if (document.body.clientWidth > 992) { nav.style.background = 'rgb(232, 224, 255)' }
       } else {
-        nav.style.background = 'rgba(232, 224, 255, .8)'
+        nav.style.background = '#ffffff'
       }
     }
   }

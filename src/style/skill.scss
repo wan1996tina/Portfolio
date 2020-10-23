@@ -2,14 +2,42 @@
   // background: #eee;
   padding: 80px;
 
+  li {
+    position: relative;
+    margin: 0 20px;
+
+    &::before {
+      content:'' ;
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 3px;
+      background: #000;
+      left: -15px;
+      top: 40%;
+    }
+  }
 
   h2 {
     text-align: center;
-    margin: 30px;
+    margin-bottom: 90px;
   }
 
   h5 {
     font-weight: 700;
+    margin-bottom: 20px;
   }
 
+  .row{
+    width: 76%;
+    margin: auto;
+  }
+
+  .col-12 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .text {
+  }
 }
